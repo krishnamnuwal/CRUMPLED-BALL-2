@@ -4,13 +4,9 @@ const Body=Matter.Body;
 const Bodies=Matter.Bodies;
 
 
-var dustbin1,paper,roomImg,dustbin2,dustbin3,ground,paper,lineImg,linee;
+var dustbin1,paper,dustbin2,dustbin3,ground,paper,linee;
 
-function preload(){
-roomImg=loadImage("room2.jpg")
-lineImg=loadImage("dustb.png")
 
-}
 
 function setup(){
     var canvas =createCanvas(1200,600);
