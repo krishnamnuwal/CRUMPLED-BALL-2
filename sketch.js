@@ -7,7 +7,6 @@ const Bodies=Matter.Bodies;
 var dustbin1,paper,dustbin2,dustbin3,ground,paper,linee;
 
 
-
 function setup(){
     var canvas =createCanvas(1200,600);
 
@@ -44,7 +43,9 @@ function draw(){
     dustbin4.display();
     ground.display();
    
-
+    if((paper.body.position.x>910)&&paper.body.position.y>400){
+      Matter.Body.setStatic(paper.body,true);
+    }
  
 
 }
